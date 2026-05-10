@@ -41,6 +41,7 @@ Atualmente cursando o [Xº] período de [Nome do Curso] na [Nome da Instituiçã
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
 | A corrida do Prompt | Este projeto refina prompts para gerar imagens barrocas de um astronauta e um e-mail satírico de um pirata de 1499 sobre tecnologia. | [Ver Projeto](./projeto-a-corrida-do-prompt/) |
+| Laboratório de Classificação Visual | Estudo prático sobre refinamento de prompts artísticos/textuais e análise ética de vieses em modelos de classificação visual de imagem. | [Ver Projeto](./projeto-laboratorio-de-classificação-visual/) |
  
 ---
  
