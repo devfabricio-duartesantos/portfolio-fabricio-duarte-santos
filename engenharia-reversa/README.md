@@ -1,20 +1,32 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🎨 QR Code Styling - AI Replication
 
-# Run and deploy your AI Studio app
+## 📝 Descrição do Projeto
+Este projeto demonstra o uso de **Engenharia de Prompt** e **Reengenharia de Software** assistida por inteligência artificial. O objetivo central é a reconstrução funcional da ferramenta *QR Code Styling* a partir de sua interface visual e lógica de comportamento, utilizando o modelo multimodal **Gemini 1.5 Pro** dentro do **Google AI Studio**.
 
-This contains everything you need to run your app locally.
+O experimento prova a capacidade da IA em deduzir lógicas complexas de renderização (como gradientes, formatos de pontos e integração de logos) a partir de inputs visuais, resultando em um clone funcional que permite customização em tempo real e exportação de arquivos.
 
-View your app in AI Studio: https://ai.studio/apps/42f7afe3-2580-4b7c-a2ea-88c406f6b9e0
+## 🚀 Tecnologias Utilizadas
+* **IA Generativa:** Google AI Studio (Modelo Gemini 1.5 Pro)
+* **Linguagens:** HTML5, CSS3, JavaScript (ES6+)
+* **Bibliotecas Base:** [qr-code-styling](https://github.com/kozakdenys/qr-code-styling)
+* **Metodologia:** Multimodal Prompting (Image-to-Code)
 
-## Run Locally
+## 🛠️ O Experimento
+O desenvolvimento seguiu um fluxo de trabalho técnico dividido em quatro etapas:
+1.  **Captura de Contexto:** Fornecimento de screenshots da interface original ao Gemini para análise visual.
+2.  **Engenharia de Prompt:** Instrução detalhada para replicação de UI e mapeamento de funções de callback para os seletores de cores e formas.
+3.  **Refinamento Iterativo:** Ajustes via chat para correções de CSS e garantia de que o download do QR Code funcionasse corretamente.
+4.  **Entrega Funcional:** Geração de um ambiente *single-page* reativo e pronto para uso.
 
-**Prerequisites:**  Node.js
+## 📊 Resultados e Aprendizados
+* **Desenvolvimento Acelerado:** Redução drástica no tempo de prototipagem de UI, convertendo referências visuais em código funcional em minutos.
+* **Dedução de Lógica:** A IA não apenas copiou o design, mas implementou corretamente a reatividade dos inputs conforme as mudanças de estado.
+* **Autonomia:** Demonstra como ferramentas de IA podem ser usadas para criar ferramentas internas customizadas sem dependência total de código proprietário original.
 
+## 🔧 Como Executar
+1. Clone o repositório.
+2. Como o projeto é baseado em tecnologias web nativas, basta abrir o arquivo `index.html` em seu navegador de preferência.
+3. Teste as customizações no painel lateral e gere seu QR Code.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+[Voltar ao portfólio](https://github.com/FabDuartZL/portfolio-fabricio-duarte-santos)
