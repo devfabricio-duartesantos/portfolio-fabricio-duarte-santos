@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  /* Glass Palette */
+  --color-glass-bg: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  
+  --color-glass-bg-light: rgba(255, 255, 255, 0.6);
+  --color-glass-border-light: rgba(255, 255, 255, 0.5);
+  
+  --color-accent-primary: #3B82F6;
+  --color-accent-secondary: #8B5CF6;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 transition-colors duration-500 min-h-screen overflow-x-hidden;
+  }
+  .dark body {
+    @apply bg-[#030712] text-white;
+  }
+  
+  /* Resetting skeuomorphic elements */
+  .shadow-skeuo-raised, .shadow-skeuo-raised-sm, .shadow-skeuo-pressed, .shadow-skeuo-pressed-sm {
+    box-shadow: none !important;
+  }
+}
+
+@utility glass-panel {
+  background: var(--color-glass-bg-light);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--color-glass-border-light);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.dark .glass-panel {
+  background: var(--color-glass-bg);
+  border-color: var(--color-glass-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@utility glass-panel-hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .glass-panel-hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+@utility atmosphere {
+  position: fixed;
+  inset: -50%;
+  z-index: -10;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.08) 0%, transparent 50%);
+  filter: blur(80px);
+  animation: float 20s ease-in-out infinite alternate;
+}
+
+.dark .atmosphere {
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.08) 0%, transparent 50%);
+}
+
+@keyframes float {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(2%, 5%) scale(1.1); }
+}

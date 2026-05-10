@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "user": {
+      "title": "User Profile",
+      "description": "Information about the user including their administrative role.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "role": { "type": "string", "enum": ["admin", "user"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "qrcode": {
+      "title": "QR Code",
+      "description": "A saved QR code configuration.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "data": { "type": "string" },
+        "options": { "type": "object" },
+        "createdBy": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "data", "options", "createdBy", "createdAt"]
+    },
+    "history": {
+      "title": "Generation History",
+      "description": "A log of each time a QR code is generated/downloaded.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "data": { "type": "string" },
+        "format": { "type": "string" },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["data", "format", "userId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "user",
+      "description": "Stores user profile and access levels."
+    },
+    "/qrcodes/{qrcodeId}": {
+      "schema": "qrcode",
+      "description": "Stores saved QR codes."
+    },
+    "/history/{historyId}": {
+      "schema": "history",
+      "description": "Stores generation logs for each user."
+    }
+  }
+}
