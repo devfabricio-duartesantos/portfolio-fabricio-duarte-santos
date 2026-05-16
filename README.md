@@ -14,7 +14,7 @@
 ### 👨‍💻 Sobre
 Atualmente cursando o 1° período de Engenharia De Software na Universidade Cidade de São paulo. Focado no aprendizado contínuo de Desenvolvimento Backend, Data Analysis e IA. Apaixonado por tecnologia e focado em criar códigos limpos que resolvam dores reais do mercado.
  
-* **Habilidades Técnicas:** Python, Google AI Studio, Firebase, Pacote Office, bubble.io, Loveable.
+* **Habilidades Técnicas:** Python, Google AI Studio, Firebase, Pacote Office, bubble.io, Loveable, PowerBI.
 * **Habilidades Socioemocionais:** Trabalho em equipe, comunicação assertiva, Resiliência, Adaptabilidade, pensamento crítico.
 
 ---
@@ -23,10 +23,17 @@ Atualmente cursando o 1° período de Engenharia De Software na Universidade Cid
  
 #### 💻 Linguagens e Tecnologias
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Microsoft Office](https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white)
+![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
+![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white)
+![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
+
+#### 🤖 Inteligência Artificial & Ciência de Dados
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
-![Microsoft Office](https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white)
 
 ---
  
