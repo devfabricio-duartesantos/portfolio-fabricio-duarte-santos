@@ -107,5 +107,4 @@ Uma simulação de chat de turnos múltiplos que exigiu da IA:
 2. Confira a pasta `/assets` para as imagens geradas em alta resolução (4K).
 
 ---
-
-[Voltar ao início](https://www.google.com/search?q=https://github.com/FabDuartZL/seu-repositorio)
+[🏠 Voltar ao Portfólio](https://github.com/FabDuartZL/portfolio-fabricio-duarte-santos)
