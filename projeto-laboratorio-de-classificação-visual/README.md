@@ -1,56 +1,54 @@
-# 🤖 Laboratório de Inteligência Artificial: Engenharia de Prompt e Visão Computacional
+# 🧠 Classificador de Imagens e Análise de Viés em IA (Empresários vs. CLT's)
 
 ## 📝 Descrição do Projeto
-Este repositório contém os resultados da **Experiência 01**, focada no domínio de técnicas de **Engenharia de Prompt** para modelos generativos, e da **Atividade 2**, que explora a **Classificação Visual** e o impacto de vieses algorítmicos.
+Este projeto consiste no desenvolvimento e análise de um modelo de classificação binária de imagens utilizando a ferramenta **Teachable Machine** (da Google). O objetivo principal foi treinar uma inteligência artificial para distinguir entre duas classes sociais/profissionais hipotéticas: **"Empresários"** e **"CLT's"**, com base em características visuais de indivíduos.
 
-O objetivo principal foi demonstrar como a precisão das instruções e o contexto artístico/técnico podem elevar a qualidade das saídas de IA, além de analisar criticamente como modelos de aprendizado de máquina podem herdar preconceitos humanos durante o treinamento.
+O projeto foi desenvolvido por **Fabricio Duarte Santos** (Matrícula: 48200425) como parte da resolução da Atividade 2 da disciplina. Mais do que construir um classificador funcional, o escopo do trabalho envolveu uma análise crítica sobre o processo de aprendizado de máquina, identificando como restrições e padrões nos dados de treino podem forçar a IA a adotar vieses preconceituosos baseados em características físicas.
 
----
-
-## 🛠️ Módulos do Projeto
-
-### 1. Engenharia de Prompt: Geração de Imagem
-O experimento documenta a evolução de um comando básico para uma imagem de alta complexidade estética.
-* [cite_start]**Refinamento:** Transição de um prompt vago ("Astronauta em Marte") para uma composição ultra-realista inspirada no estilo **Barroco de Caravaggio**, utilizando técnicas de **Chiaroscuro** e iluminação dramática[cite: 231, 233].
-* [cite_start]**Resultado:** Imagens cinematográficas em resolução 4K que atendem a padrões de exposição museológica[cite: 234].
-
-### 2. Engenharia de Prompt: Persona e Roleplay
-Criação de uma interação complexa de turnos múltiplos envolvendo o pirata **Gonçalo "O Desamparado"** em 1499.
-* [cite_start]**Contexto:** Um pirata marginalizado que encontra um computador e aprende redes de computadores para negociar com o Rei da Finlândia[cite: 298, 380].
-* [cite_start]**Técnica:** Uso de linguagem rebuscada com erros gramaticais propositais, gírias de época e conceitos modernos (como Startups e Níquel) traduzidos para metáforas do século XV [cite: 324, 387-391].
-
-### 3. Classificação Visual e Vieses (Teachable Machine)
-[cite_start]Desenvolvimento de um modelo de classificação de imagem para distinguir entre duas classes: "Empresários" e "CLT's"[cite: 401].
-* [cite_start]**Análise de Dados:** O modelo utilizou padrões como vestimentas neutras vs. estampadas e semblantes sérios vs. alegres[cite: 402, 403].
-* [cite_start]**Crítica Ética:** O experimento identificou que a IA pode passar a julgar indivíduos por características físicas (etnia, sexo, penteado), gerando vieses preconceituosos se não houver colaboração humana contínua[cite: 406, 407].
+* **Link do Modelo Online:** [Acessar Teachable Machine](https://teachablemachine.withgoogle.com/models/1csah93fn/)
 
 ---
 
-## 🚀 Tecnologias Utilizadas
-* **Geração de Imagem/Texto:** Modelos de Linguagem de Grande Escala (LLMs) e Motores de IA Generativa.
-* **Visão Computacional:** Teachable Machine (Google).
-* **Conceitos Chave:** Chiaroscuro, Algoritmos de Classificação, Vieses Cognitivos e Startups de Hardware.
+## ⚙️ Arquitetura do Modelo e Treinamento
+
+O modelo foi construído utilizando uma rede neural convolucional adaptada via *Transfer Learning* na interface do Teachable Machine.
+
+### Configuração dos Hiperparâmetros
+* **Epochs (Épocas):** 50
+* **Batch Size (Tamanho do Lote):** 16
+* **Learning Rate (Taxa de Aprendizado):** 0.001
+
+### Estrutura das Classes e Dataset
+O conjunto de dados foi composto por amostras de imagem de colegas de turma, distribuídas da seguinte forma:
+
+| Classe | Quantidade de Amostras | Características Predominantes no Treino |
+| :--- | :--- | :--- |
+| **Empresários** | 10 amostras | Semblantes sérios, roupas de cores neutras e menos estampadas. |
+| **CLT's** | 10 amostras | Semblantes alegres, roupas divergentes e estampadas. |
 
 ---
 
-## 📊 Resultados e Aprendizados
-* [cite_start]**Domínio de Contexto:** Aprendi que a inclusão de referências históricas e artísticas específicas reduz drasticamente a vagueza dos resultados da IA[cite: 227].
-* [cite_start]**Identificação de Vieses:** O projeto alcançou **86% de confiança** na classificação de perfis [cite: 432][cite_start], mas revelou a necessidade de supervisão humana para evitar a automação de preconceitos[cite: 407].
-* [cite_start]**Comunicação Técnica:** Implementação de e-mails com tom satírico e superioridade técnica simulada, demonstrando a versatilidade das personas de IA[cite: 350].
+## 📊 Resultados e Análise de Viés
+
+### Desempenho do Modelo
+Em testes com imagens com características bem delimitadas, o modelo apresentou forte convicção. Como demonstrado na interface, ao analisar um indivíduo com semblante alegre e trajes casuais, o sistema gerou a seguinte saída:
+* **CLT's:** `86%` de confiança
+* **Empresários:** `14%` de confiança
+
+### O Problema do Viés Cognitivo e Algorítmico (Bias)
+O principal aprendizado deste projeto envolveu o comportamento do sistema diante de dados ambíguos. Ao introduzir uma imagem que misturava características de ambas as classes, o programa apresentou divergências. 
+
+> ⚠️ **Reflexão Crítica:** Ao "cercar" a IA e forçá-la a encontrar padrões de semelhança em um dataset limitado, o sistema passa a correlacionar classes a variáveis irrelevantes e sensíveis, como **penteado, etnia e sexo**. Esse fenômeno transforma uma classificação puramente comportamental/indumentária em uma prática de **viés preconceituoso**, evidenciando os perigos de triagens automatizadas por características físicas.
 
 ---
 
-## 👥 Membros do Grupo
-**Fabricio Duarte Santos** (Matrícula: 48200425) [cite: 236]
-**Davi Henrique Santos Nascimento** (Matrícula: 47434899) [cite: 238]
-**João Lucas Moreira Dos Reis** (Matrícula: 48162086) [cite: 239]
-**Matheus Cardoso Sena** (Matrícula: 48214060) [cite: 240]
+## 🔧 Conclusão e Próximos Passos
+
+O projeto comprova que a inteligência artificial não possui discernimento moral próprio e apenas replica padrões matemáticos contidos nos dados. 
+
+Para mitigar esses problemas, destaca-se que:
+1. Há uma necessidade indispensável de **colaboração humana contínua** no refinamento e supervisão do trabalho da IA.
+2. A diversificação do dataset de treino é essencial para mitigar "preconceitos" algorítmicos e estimular um aprendizado verdadeiramente robusto e ético do sistema.
 
 ---
-
-## 🔧 Como Visualizar
-1.  Navegue pela pasta `/docs` para ler os relatórios completos da Experiência 01.
-2.  [cite_start]Acesse o modelo de classificação visual através do link: [Teachable Machine Model](https://teachablemachine.withgoogle.com/models/1csah93fn/)[cite: 396].
-
----
-[Voltar ao início](https://github.com/FabDuartZL/portfolio-fabricio-duarte-santos)
+[🏠 Voltar ao Portfólio](https://github.com/FabDuartZL/portfolio-fabricio-duarte-santos)
