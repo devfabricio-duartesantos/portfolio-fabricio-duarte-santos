@@ -11,7 +11,7 @@
 ---
  
 ### 👨‍💻 Sobre
-Atualmente cursando o 1° período de Engenharia De Software na Universidade Cidade de São paulo. Focado no aprendizado contínuo de Desenvolvimento Backend, Data Analysis e IA. Apaixonado por tecnologia e focado em criar códigos limpos que resolvam dores reais do mercado.
+Atualmente cursando o 2° período de Engenharia De Software na Universidade Cidade de São paulo. Focado no aprendizado contínuo de Desenvolvimento Backend, Data Analysis e IA. Apaixonado por tecnologia e focado em criar códigos limpos que resolvam dores reais do mercado.
  
 * **Habilidades Técnicas:** Python, Google AI Studio, Firebase, Pacote Office, bubble.io, Loveable, PowerBI, JAVA.
 * **Habilidades Socioemocionais:** Trabalho em equipe, comunicação assertiva, Resiliência, Adaptabilidade, pensamento crítico.
